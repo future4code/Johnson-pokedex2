@@ -2,6 +2,7 @@ import React from 'react'
 import { HomePage } from '../Pages/HomePage';
 import { PokedexPage } from '../Pages/PokedexPage';
 import { StatsPage } from '../Pages/StatsPage';
+import { ErrorPage } from '../Pages/ErrorPage';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 
 
@@ -23,6 +24,7 @@ export const Router = () => {
                     <StatsPage />
                 </Route>
             </Switch>
+            
         
         </BrowserRouter>
     )
