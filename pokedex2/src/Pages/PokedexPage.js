@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import CardPokemon from '../Components/CardPokemon/CardPokemon'
 
 const ContainerPokedexPage = styled.div`
-    max-width: 900px;
-    max-height: 1024px;
+    max-width: 100vw;
+    /* max-height: 100vh; */
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns :repeat(4, 1fr) ;
