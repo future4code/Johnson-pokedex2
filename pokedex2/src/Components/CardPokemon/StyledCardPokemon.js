@@ -39,7 +39,7 @@ export const Tags = styled.h6`
     border-bottom: 1px solid;
     margin: 5px 10px 10px
 
-    `
+`
 export const StatsButton = styled.button`
     width: 85px;
     margin-left: 10px;
