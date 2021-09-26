@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 
+export const Body = styled.div`
+    background-image: url(http://cdn26.us1.fansshare.com/photo/wallpapershd/pokemon-hd-wallpaper-1501389656.jpg);
+`
 
 export const ContainerCard = styled.div`
     height: 200px;

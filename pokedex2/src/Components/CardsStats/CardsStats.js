@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import {
+  Body,
   PageContainer,
   ContainerImgs,
   ContainerStats,
@@ -13,7 +14,7 @@ export default function CardsStats() {
   
 
   return (
-    <>
+    <Body>
       <div>
         <Button
           variant={"contained"}
@@ -47,15 +48,15 @@ export default function CardsStats() {
                 </div>
         </ContainerStats>
         <ContainerTypesMoves>
-          <ContainerTypes>Type1 Type2</ContainerTypes>
+          <ContainerTypes>Teste1 Teste2</ContainerTypes>
           <ContainerMoves>
-            <h5>Moves</h5>
-            <p>Move name1</p>
-            <p>Move name2</p>
-            <p>Move name3</p>
+            <h5>Teste</h5>
+            <p>Teste</p>
+            <p>Teste</p>
+            <p>Teste</p>
           </ContainerMoves>
         </ContainerTypesMoves>
       </PageContainer>
-    </>
+    </Body>
   );
 }

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Body = styled.div`
+    background-image: url(http://cdn26.us1.fansshare.com/photo/wallpapershd/pokemon-hd-wallpaper-1501389656.jpg);
+`
+
 export const PageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
