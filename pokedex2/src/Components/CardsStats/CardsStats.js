@@ -1,15 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button } from "@material-ui/core";
-import { Page, ContainerHeader, PageContainer, ContainerButton } from "./StyledCardsStats";
-
+import {
+  PageContainer,
+  ContainerImgs,
+  ContainerStats,
+  ContainerTypes,
+  ContainerMoves,
+  ContainerTypesMoves
+} from "./StyledCardsStats";
 
 export default function CardsStats() {
+  
+
   return (
-    <Page>
-      <ContainerHeader>
-        <ContainerButton>
-        <Button id="bt"
-          onClick={""}
+    <>
+      <div>
+        <Button
           variant={"contained"}
           color={"primary"}
         >
@@ -18,28 +24,38 @@ export default function CardsStats() {
         <Button variant={"contained"} color={"primary"}>
           Adicionar/Remover da Pokedex
         </Button>
-        </ContainerButton>
-        </ContainerHeader>
-     
+      </div >
       <PageContainer>
         <div>
-          <div>
+          <ContainerImgs>
             <img
               src={""}
               alt="foto do pokemon"
             />
-          </div>
-          <div>
+          </ContainerImgs>
+          <ContainerImgs>
             <img
               src={""}
               alt={"foto pokemon de costas"}
             />
-          </div>
+          </ContainerImgs>
         </div>
-        <div>
-          {}
-        </div>
-        <div>Pokemon</div>
+        <ContainerStats>
+          
+                <div >
+                  
+                </div>
+        </ContainerStats>
+        <ContainerTypesMoves>
+          <ContainerTypes>Type1 Type2</ContainerTypes>
+          <ContainerMoves>
+            <h5>Moves</h5>
+            <p>Move name1</p>
+            <p>Move name2</p>
+            <p>Move name3</p>
+          </ContainerMoves>
+        </ContainerTypesMoves>
       </PageContainer>
-    </Page>
-  );}
+    </>
+  );
+}
