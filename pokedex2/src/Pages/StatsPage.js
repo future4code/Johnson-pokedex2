@@ -1,9 +1,10 @@
 import React from 'react'
+import CardsStats from '../Components/CardsStats/CardsStats'
 
 export const StatsPage = () => {
     return (
         <div>
-            <h2>Stats Page</h2>
+            <CardsStats />
         </div>
     )
 }
