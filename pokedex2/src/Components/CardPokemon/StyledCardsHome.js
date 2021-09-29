@@ -7,12 +7,13 @@ export const ContainerCard = styled.div`
     width: 200px;
     padding: 5px;
     border-radius: 15px;
-    background-color: rgba(0,117,190);
+    background-color: #0075BE;
     display: flex;
     flex-direction: column;
     align-items: center;    
     box-shadow: 3px 3px 4px 4px rgba(10,40,95);
     text-align: center;
+    margin: 16px;
 
         & p {
             margin-left: 10px;
