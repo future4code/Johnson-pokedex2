@@ -50,5 +50,5 @@ export const StatsButton = styled.button`
     font-size: 11px;
     padding: 3px 0;
     text-transform: uppercase;
-    color: white;
+    color: white; 
 `
