@@ -158,6 +158,11 @@ export const HomePage = () => {
            <CardsHome/>
            <CardsHome/>
            <CardsHome/>
+           <CardsHome/>
+           <CardsHome/>
+           <CardsHome/>
+           <CardsHome/>
+           <CardsHome/>
            
             </Main>
             <Footer>
