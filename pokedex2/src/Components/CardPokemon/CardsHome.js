@@ -1,9 +1,17 @@
 import React from 'react'
+import { goToStats } from '../../Route/Coordinator'
+import { useHistory } from 'react-router'
 import StyledCardsHome from './StyledCardsHome'
 import { ContainerCard, PokemonImg, Name, Tags, StatsButton} from './StyledCardsHome'
 
 
 export default function CarrdsHome() {
+    const history = useHistory()
+
+    // usar useContext para buscar informações do Estado Global, consumir o context
+    // slide 26
+
+
     return (
         <div>
             <ContainerCard>
@@ -19,7 +27,7 @@ export default function CarrdsHome() {
                 </div>
                 </div>
                 <div>
-                <StatsButton>Detalhes</StatsButton>
+                <StatsButton onClick={()=> goToStats(history)}>Detalhes</StatsButton>
                 <StatsButton>Adicionar</StatsButton>
                 </div>
 
