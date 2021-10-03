@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import CardPokemon from '../Components/CardPokemon/CardPokemon'
+import CardPokemon from '../components/CardPokemon/CardPokemon'
 
 const ContainerPokedexPage = styled.div`
     max-width: 100vw;

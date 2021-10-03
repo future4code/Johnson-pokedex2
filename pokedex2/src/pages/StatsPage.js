@@ -1,5 +1,5 @@
 import React from 'react'
-import CardsStats from '../Components/CardsStats/CardsStats'
+import CardsStats from '../components/CardsStats/CardsStats'
 
 export const StatsPage = () => {
     return (

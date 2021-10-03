@@ -24,9 +24,10 @@ export const ImgsContainer = styled.div`
   width: 200px;
   height: 200px;
   border: 1px solid black;
+  border-radius: 10%;
   margin-top: 15px;
   background-color: white;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 3px 3px 4px 4px rgba(10,40,95);
   img {
     width: 100%;
   }
@@ -42,6 +43,7 @@ export const StatsContainer = styled.div`
   font-weight: bold;
   background-color: white;
   border: 1px solid black;
+  border-radius: 10%;
   justify-content: space-around;
   box-shadow: 10px 5px 5px black;
 `;
@@ -50,6 +52,7 @@ export const TypesMovesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  border-radius: 10%;
   justify-content: space-between;
   width: 300px;
   height: 415px;
@@ -73,6 +76,7 @@ export const MovesContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid black;
+  border-radius: 10%;
   background-color: white;
   height: 300px;
   text-align: center;

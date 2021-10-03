@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@material-ui/core";
 import { useParams, useHistory } from "react-router";
-import { goBack } from "../../Route/coordinator";
+import { goBack } from "../../routes/coordinator";
 import {
   Body,
   PageContainer,

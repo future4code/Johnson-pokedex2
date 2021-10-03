@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import styled from 'styled-components'
-import CardsHome from '../Components/CardPokemon/CardsHome'
-import ImgHome from "../Images/home.png"
+import CardsHome from '../components/CardPokemon/CardsHome'
+import ImgHome from "../images/home.png"
 
 const ContainerHomePage = styled.div`
 display: flex;
@@ -11,9 +11,6 @@ width: 100%;
 min-height: 550px;
 align-items: center;
 background-color: #223d6e;
-
-
-
 `
 const ButtonsHeaderPage = styled.div`
 display: flex;
@@ -142,7 +139,6 @@ export const HomePage = () => {
                 </a>
            
             <ButtonsHeaderPage>
-            <button onClick={goToStats}>Status</button>
             <button onClick={goToPokedex}>Pokedex</button>
             </ButtonsHeaderPage>
             </Header>

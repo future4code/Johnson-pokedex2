@@ -1,5 +1,5 @@
 import React from 'react'
-import Error from '../Images/errorgif.gif'
+import Error from '../images/errorgif.gif'
 
 export const ErrorPage = () => {
     return (
