@@ -1,9 +1,11 @@
-import './App.css';
-import React from 'react'
-import { Router } from './routes/Router';
+import React from "react";
+import Router from "./routes/Router";
+import GlobalState from "./global/GlobalState";
 
 export default function App() {
   return (
-    <Router />
-  )
+    <GlobalState>
+      <Router />
+    </GlobalState>
+  );
 }
