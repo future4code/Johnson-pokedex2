@@ -27,7 +27,7 @@ export default function CarrdsHome() {
                 </div>
                 </div>
                 <div>
-                <StatsButton onClick={()=> goToStats(history)}>Detalhes</StatsButton>
+                <StatsButton onClick={()=> goToPokemonStats(history)}>Detalhes</StatsButton>
                 <StatsButton>Adicionar</StatsButton>
                 </div>
 
