@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
-import BASE_URL from "../../Constante/Constante"
+import {BaseUrl} from "../../Constante/Constante"
 
 export const GlobalState = (props) =>{
 
@@ -8,7 +8,7 @@ export const GlobalState = (props) =>{
     const [selectPokemon, setSelectPokemon] = useState({})
 
     const getPokemonById = (pokeName) => {
-        axios.get(`${BASE_URL}/${pokeName}`)
+        axios.get(`${BaseUrl}/${pokeName}`)
         .then((response) =>{
             setPokemons(response.data)
         })
@@ -20,7 +20,7 @@ export const GlobalState = (props) =>{
 
 
     const getPokemons = () => {
-        axios.get(`${BASE_URL}`)
+        axios.get(`${BaseUrl}`)
         .then((response) =>{
             setPokemons(response.data)
         })
