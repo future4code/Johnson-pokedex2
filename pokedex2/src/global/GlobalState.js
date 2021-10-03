@@ -24,7 +24,7 @@ const GlobalState = (props) => {
               return a.id - b.id;
             });
             setPokemons(orderedList);
-          }
+          } 
         })
         .catch((error) => console.log(error.message));
     });
