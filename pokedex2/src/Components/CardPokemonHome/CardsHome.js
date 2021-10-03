@@ -1,5 +1,5 @@
 import React from 'react'
-import { goToStats } from '../../Route/Coordinator'
+import { goToPokemonStats } from '../../Route/Coordinator'
 import { useHistory } from 'react-router'
 import StyledCardsHome from './StyledCardsHome'
 import { ContainerCard, PokemonImg, Name, Tags, StatsButton} from './StyledCardsHome'
