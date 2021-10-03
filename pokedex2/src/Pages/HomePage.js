@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import styled from 'styled-components'
-import CardsHome from '../Components/CardPokemon/CardsHome'
+import CardsHome from '../Components/CardPokemonHome/CardsHome'
 import ImgHome from "../Images/home.png"
 
 const ContainerHomePage = styled.div`
