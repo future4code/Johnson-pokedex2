@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GlobalStateContext from "../../global/GlobalStateContext";
 import { useHistory } from "react-router-dom";
+import { goToPokedex } from "../../routes/coordinator"
 import {
   TypeAndMovesContainer,
   PokeInfosContainer,
@@ -22,6 +23,7 @@ const PokemonDetailPage = () => {
   const { pokemons, pokedex } = useContext(GlobalStateContext);
   const [selectedPokemon, setSelectedPokemon] = useState({});
 
+ 
   useEffect(() => {
     let current = [];
     if (telaPokedex) {
@@ -46,7 +48,12 @@ const PokemonDetailPage = () => {
 
   return (
     <div>
-      <Header leftButtonFunction={() => history.goBack()} showRightButton />
+      <Header
+        title={name}
+        leftButtonFunction={() => goToPokedex(history)}
+      />
+      
+      
       {selectedPokemon && selectedPokemon.sprites && (
         <PokeInfosContainer>
           <ImagesContainer>
@@ -69,7 +76,7 @@ const PokemonDetailPage = () => {
             <TypesContainer>
               {selectedPokemon &&
                 selectedPokemon.types.map((type) => {
-                  return <p key={type.type.name}>{type.type.name}</p>;
+                  return <TitleContainer key={type.type.name}> {type.type.name}</TitleContainer>;
                 })}
             </TypesContainer>
             <MovesContainer>
