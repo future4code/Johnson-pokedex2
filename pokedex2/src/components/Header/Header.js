@@ -9,30 +9,33 @@ const Header = ({ leftButtonFunction, title, showRightButton }) => {
 
   const leftButtonTitle = () => {
     switch (title) {
-      case "Lista de Pokémons":
+      case "Lista de Pokemons":
         return "Ir para Pokedex";
-      case "Pokédex":
+      case "Pokedex":
         return "Voltar para lista de pokemons";
       default:
-        return "Voltar";
+        return "Ir para Pokedex";
     }
   };
 
   return (
     <HeaderContainer>
-      <LeftHeaderButton onClick={leftButtonFunction}>
-        {leftButtonTitle()}
-      </LeftHeaderButton>
       <a href="/">
           <PictureHeaderHome alt= "home" src={ImgHome}/>
                     
-                </a>
+      </a> 
+      
       <h1>{title}</h1>
       {showRightButton && (
         <RightHeaderButton onClick={() => goToPokedex(history)}>
           Ir para pokedex
         </RightHeaderButton>
       )}
+      <LeftHeaderButton onClick={leftButtonFunction}>
+        {leftButtonTitle()}
+      </LeftHeaderButton>
+      
+      
     </HeaderContainer>
   );
 };

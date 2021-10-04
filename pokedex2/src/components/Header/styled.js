@@ -4,24 +4,34 @@ import { mainColor } from "../../constants/colors";
 export const HeaderContainer = styled.header`
 display: flex;
 align-items: center;
+text-align: center;
+padding: 1%;
 background-color:#1B53BA;
-width: 100%;
-height: 5vw;
+width: 98%;
+height: 4vw;
 justify-content: space-between;
-padding: 16px;
+
+h1{
+  color: white;
+  letter-spacing: 6px;
+}
 `;
 
 export const LeftHeaderButton = styled.button`
-  display: flex;
-  column-gap: 16px;
-  margin-right: 30px;
-  height: 30px;
+  color: #1B53BA;
+  border: none;
+  background-color: #ffcc00;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5%;
+  margin: 12px;
 `;
 
 export const RightHeaderButton = styled.button`
-    display: flex;
+  display: flex;
   column-gap: 16px;
-  margin-right: 30px;
+  padding-right: 30px;
   height: 30px;
 `;
 

@@ -19,7 +19,7 @@ const GlobalState = (props) => {
         .get(`${BASE_URL}/pokemon/${item.name}`)
         .then((response) => {
           newList.push(response.data);
-          if (newList.length === 20) {
+          if (newList.length === 30) {
             const orderedList = newList.sort((a, b) => {
               return a.id - b.id;
             });
@@ -32,7 +32,7 @@ const GlobalState = (props) => {
 
   const getPokemonNames = () => {
     axios
-      .get(`${BASE_URL}/pokemon?limit=20`)
+      .get(`${BASE_URL}/pokemon?limit=30`)
       .then((response) => {
         setPokemonNames(response.data.results);
       })

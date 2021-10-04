@@ -5,7 +5,8 @@ import {
   PokeCardContainer,
   ImgContainer,
   PokeImg,
-  ButtonsContainer
+  ButtonsContainer,
+  Buttons
 } from "./styled";
 import GlobalStateContext from "../../global/GlobalStateContext";
 
@@ -62,17 +63,18 @@ const PokemonCard = (props) => {
           alt={props.poke.name}
         />
       </ImgContainer>
+      <h3>{props.poke.name}</h3>
       <ButtonsContainer>
-        <button onClick={props.isPokedex ? removeFromPokedex : addToPokedex}>
-          {props.isPokedex ? "Remover da Pokédex" : "Adicionar a Pokédex"}
-        </button>
-        <button
+        <Buttons onClick={props.isPokedex ? removeFromPokedex : addToPokedex}>
+          {props.isPokedex ? "Remover" : "Adicionar"}
+        </Buttons>
+        <Buttons
           onClick={() =>
             goToPokemonDetail(history, props.poke.name, props.isPokedex)
           }
         >
           Ver detalhes
-        </button>
+        </Buttons>
       </ButtonsContainer>
     </PokeCardContainer>
   );

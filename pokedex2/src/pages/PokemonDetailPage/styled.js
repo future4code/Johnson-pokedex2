@@ -1,31 +1,32 @@
 import styled from "styled-components";
 import { backgroundCard } from "../../constants/colors";
 
+
 export const PokeInfosContainer = styled.main`
-  background-color: rgba(0,117,190);
-  height: 80vh;
-  margin: 0%;
+  background-color: #223d6e;
+  height: 100vh;
+  margin: 0;
+  padding: 16px;;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  
 `;
 
 export const ImagesContainer = styled.div`
   align-self: center;
-  height: 75%;
+  height: 70%;
   display: flex;
   border-radius: 3%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 export const ImgWrapper = styled.img`
   width: 200px;
   height: 200px;
-  border: 1px solid black;
   border-radius: 3%;
-  margin-top: 15px;
   background-color: white;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 4px 4px 8px;;
   img {
     width: 100%;
   }
@@ -35,39 +36,49 @@ export const StatsContainer = styled.div`
   display: flex;
   border-radius: 3%;
   flex-direction: column;
-  text-align: center;
-  margin-top: 15px;
-  width: 200px;
-  height: 415px;
-  font-weight: bold;
+  margin-top: 100px;
+  padding:12px;
+  width: 300px;
+  height: 500px;
   background-color: white;
-  border: 1px solid black;
+  border: none;
   justify-content: space-around;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 4px 4px 8px;
+  & p{
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-left: 18px;
+  }
 `;
 
 export const TitleContainer = styled.h2`
   align-self: center;
+  
 `;
 
 export const TypeAndMovesContainer = styled.div`
   align-self: center;
-  height: 75%;
+  height: 60%;
   width: 300px;
-  box-shadow: 10px 5px 5px black;
   display: flex;
-  border-radius: 3%;
+  border-radius: 30%;
   flex-direction: column;
   justify-content: space-between;
+  
 `;
 
 export const TypesContainer = styled.div`
   background: ${backgroundCard};
-  height: 10%;
+  height: 50px;
+  width: 300px;
   display: flex;
-  box-shadow: 10px 5px 5px black;
-  border-radius: 3%;
-  justify-content: space-around;
+  box-shadow: 4px 4px 8px;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 7.5px;
+  
+  
+  
 `;
 
 export const MovesContainer = styled.div`
@@ -78,6 +89,15 @@ export const MovesContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 415px;
-  margin-top: 15px;
+  height: 500px;
+  margin-top: 10px;
+  padding: 8px;
+  box-shadow: 4px 4px 8px;
+
+  & p{
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-left: 18px;
+  }
 `;
+

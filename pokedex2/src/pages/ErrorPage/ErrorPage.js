@@ -1,12 +1,25 @@
 import React from 'react'
 import Error from '../../images/errorgif.gif'
-import { ErrorContainer } from '../ErrorPage/styled'
+import { ErrorContainerPage, ContainerPage, Title, ImgError, PicturePokeHome, TitleContainer } from '../ErrorPage/styled'
+import ImgHome from "../../images/home.png"
 
 export const ErrorPage = () => {
     return (
-        <ErrorContainer>
-            <h1>ALGO DEU ERRADO!!</h1>
-            <img src={Error} />
-        </ErrorContainer>
+
+        <ContainerPage>
+            <ErrorContainerPage>
+                   
+
+            <TitleContainer>
+        
+            <Title>Ops.! Clique na Pokebola para retornar! </Title>
+            <a href="/">
+                <PicturePokeHome alt= "home" src={ImgHome}/>
+            </a>
+            </TitleContainer>
+            <ImgError src={Error} />
+            
+            </ErrorContainerPage>
+        </ContainerPage>
     )
 }

@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
-export const PokeListContainer = styled.main`
-       height: 200px;
-    width: 200px;
-    padding: 5px;
-    border-radius: 15px;
-    background-color: rgba(0,117,190);
-    display: grid;
-    grid-column: initial;
-    box-shadow: 3px 3px 4px 4px rgba(10,40,95);
 
-        & p {
-            margin-left: 10px;
-            font-size: 16px;
-        }
-`;
+export const PokeListContainer = styled.main`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+    background-color: #223d6e;
+
+`
